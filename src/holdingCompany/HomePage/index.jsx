@@ -1,10 +1,6 @@
-import React, { Fragment } from "react";
-import { Col, Row } from "react-bootstrap";
-import { FooterComponent } from "../shared/FooterComponent";
-import HeaderContactInfo from "../shared/HeaderContactInfo";
-import NavBar from "../shared/NavBar";
-import { SideBar } from "../shared/SideBar";
-import Slider from "./components/Slider";
+import { Fragment } from "react";
+import Slider from "../shared/Slider";
+
 import TextContent from "./components/TextContent";
 
 const HomePage = () => {

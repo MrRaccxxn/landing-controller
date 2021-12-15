@@ -1,12 +1,10 @@
 @import "./components/TextContent/styles.scss";
 
-.content{
-    padding-left: 30%;
-    padding-right: 10%;
-}
+.content {
+  padding-left: 30%;
+  padding-right: 10%;
 
-@media only screen and (max-width: 767px) {
-    .content{
-        padding: 0 10%;
-    }
+  @media only screen and (max-width: 767px) {
+    padding: 0 10%;
   }
+}

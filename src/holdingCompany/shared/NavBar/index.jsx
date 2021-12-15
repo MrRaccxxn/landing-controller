@@ -5,8 +5,8 @@ const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
       <Container>
-        <Navbar.Brand href="#home">
-          <img src={logo} />
+        <Navbar.Brand href="/">
+          <img src={logo} width="250px" alt="logo Santa Cruz FG Sociedad Controladora S.A."/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -42,7 +42,7 @@ const NavBar = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="#features">Contacto</Nav.Link>
+            <Nav.Link href="contacto">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

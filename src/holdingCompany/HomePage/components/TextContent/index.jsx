@@ -30,7 +30,7 @@ const TextContent = (props) => {
         inversiones y seguros personales de vida y salud.:
       </p>
 
-      <img id="financialGroup" src={financialGroup} />
+      <img id="financialGroup" src={financialGroup} alt="Santa Cruz FG Sociedad Controladora S.A."/>
     </div>
   );
 };

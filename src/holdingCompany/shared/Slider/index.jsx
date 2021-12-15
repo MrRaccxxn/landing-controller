@@ -1,12 +1,12 @@
 import { Carousel } from "react-bootstrap";
-import banner1 from "../../../../assets/img/banner_1.jpg"
-import banner2 from "../../../../assets/img/banner_2.jpg"
-import banner3 from "../../../../assets/img/banner_3.jpg"
-import banner4 from "../../../../assets/img/banner_4.jpg"
-import banner5 from "../../../../assets/img/banner_5.jpg"
-import banner6 from "../../../../assets/img/banner_6.jpg"
+import banner1 from "../../../assets/img/banner_1.jpg"
+import banner2 from "../../../assets/img/banner_2.jpg"
+import banner3 from "../../../assets/img/banner_3.jpg"
+import banner4 from "../../../assets/img/banner_4.jpg"
+import banner5 from "../../../assets/img/banner_5.jpg"
+import banner6 from "../../../assets/img/banner_6.jpg"
 
-const Slider = (props) => {
+const Slider = () => {
   return (
     <Carousel className="slider">
       <Carousel.Item>
