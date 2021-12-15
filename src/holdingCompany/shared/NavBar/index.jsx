@@ -1,57 +1,52 @@
-import React, { Fragment } from 'react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    useParams,
-  } from "react-router-dom";
-  import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
-
+import { Nav, NavDropdown, Navbar, Container } from "react-bootstrap";
+import logo from "../../../assets/img/logo.png";
 
 const NavBar = () => {
   return (
-    <Fragment>
-       <div className="row">
-                    <div className="col-md-12">
-                        <Router>
-                            <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-                                <Navbar.Brand href="#home">React Bootstrap Navbar</Navbar.Brand>
-                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                                <Navbar.Collapse id="basic-navbar-nav">
-                                    <Nav className="mr-auto">
-                                    <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/about-us">Contact Us</Nav.Link>
-                                    <Nav.Link href="/contact-us">About Us</Nav.Link>
-                                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                        <NavDropdown.Divider />
-                                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                                    </NavDropdown>
-                                    </Nav>
-                                    <Form inline>
-                                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                                    <Button variant="outline-success">Search</Button>
-                                    </Form>
-                                </Navbar.Collapse>
-                            </Navbar>
-                            <br />
-                            <Switch
-                                <Route exact path="/">
-                                 
-                                </Route>
-                                <Route path="/about-us">
-                                   
-                                </Route>
-                                <Route path="/contact-us">
-                              
-                                </Route>
-                            </Switch>
-                        </Router>
-                    </div>
-                </div>
-    </Fragment>
+    <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
+      <Container>
+        <Navbar.Brand href="#home">
+          <img src={logo} />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto"></Nav>
+          <Nav>
+            <NavDropdown title="¿Quiénes somos?" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="mision-vision-y-valores">
+                Misión, Visión y Valores
+              </NavDropdown.Item>
+              <NavDropdown.Item href="estructura-de-scfg">
+                Estructura de SCFG
+              </NavDropdown.Item>
+              <NavDropdown.Item href="estados-financieros">
+                Estados Financieros
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown
+              title="Empresas del Grupo Financiero"
+              id="collasible-nav-dropdown"
+            >
+              <NavDropdown.Item href="banco-fassil">
+                Banco Fassil
+              </NavDropdown.Item>
+              <NavDropdown.Item href="santa-cruz-investments-safi">
+                Santa Cruz Investments SAFI
+              </NavDropdown.Item>
+              <NavDropdown.Item href="santa-cruz-securities">
+                Santa Cruz Securities Agencia de Bolsa
+              </NavDropdown.Item>
+              <NavDropdown.Item href="santa-cruz-seguros-vida-y-salud">
+                Santa Cruz Seguros Vida y Salud
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            <Nav.Link href="#features">Contacto</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

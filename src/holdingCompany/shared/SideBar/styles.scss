@@ -1,0 +1,50 @@
+.sideBar {
+  padding-right: 50%;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 10%;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    > li {
+      position: relative;
+      padding-top: 10px;
+
+      &::after {
+        content: "";
+        display: block;
+        text-align: left;
+        width: 100%;
+        border-bottom: 0.1em solid #e7eaf1;
+        margin: 0.8em auto 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: #80d0fc;
+      }
+
+      a::after {
+        content: "ᐳ";
+        font-family: "Fontawesome";
+        font-size: 9px;
+        margin-right: 5px;
+        float: right;
+      }
+    }
+  }
+
+  h3 {
+    &::after {
+      content: "";
+      display: block;
+      text-align: left;
+      width: 100%;
+      border-bottom: 0.2em solid #e7eaf1;
+      margin: 0.8em auto 0;
+    }
+  }
+}

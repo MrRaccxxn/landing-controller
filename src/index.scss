@@ -1,3 +1,13 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./holdingCompany/HomePage/styles.scss";
+@import "./holdingCompany/aboutUs/styles.scss";
+
+//shared
+@import "./holdingCompany/shared/HeaderContactInfo/styles.scss";
+@import "./holdingCompany/shared/FooterComponent/styles.scss";
+@import "./holdingCompany/shared/SideBar/styles.scss";
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +15,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1{
+  padding: 0.4em 0;
 }

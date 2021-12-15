@@ -1,0 +1,14 @@
+table{
+    tr > th{
+        color: #002060;
+    }
+
+    tr > td:first-child{
+        text-align: start;
+    }
+
+    tr > td{
+        padding: 5px 0;
+        text-align: end;
+    }
+}
